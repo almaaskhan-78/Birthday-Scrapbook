@@ -1,0 +1,1355 @@
+/* ==========================================================
+                        GOOGLE FONTS
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@500;700&display=swap');
+
+/* ==========================================================
+                        GLOBAL
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family:'Poppins',sans-serif;
+}
+
+
+button{
+    background:#d8b48a;
+    color:#8b4a4a;
+    border:none;
+    padding:15px 45px;
+    border-radius:40px;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#c79a6e;
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================================================
+                        COVER PAGE
+========================================================== */
+
+.cover-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#F4EDE4;
+
+}
+
+.cover{
+
+    width:600px;
+
+    padding:60px;
+
+    background-image:url("../images/Paper.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+    animation:fadeIn .8s ease;
+
+}
+
+.cover h3{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:42px;
+
+    color:#6a4e3d;
+
+    margin-bottom:10px;
+
+}
+
+.cover h1{
+
+    font-size:50px;
+
+    color:#3d2d23;
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+
+}
+
+.cover p{
+
+    color:#8d5d4d;
+
+    line-height:2;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================================
+                        LOCK PAGE
+========================================================== */
+
+.lock-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#fbeee6,#f7d9c4);
+
+}
+
+.lock-box{
+
+    width:400px;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.lock-box h1{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    color:#5a4634;
+
+}
+
+.lock-box p{
+
+    color:#8d5d4d;
+
+    margin-bottom:15px;
+
+}
+
+.lock-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    text-align:center;
+
+    font-size:18px;
+
+    margin:20px 0;
+
+    outline:none;
+
+}
+
+.lock-box input:focus{
+
+    border-color:#d8b48a;
+
+}
+
+/* ==========================================================
+                        ENVELOPE PAGE
+========================================================== */
+
+.envelope-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#fff1e6,#ffe5ec);
+
+}
+
+.envelope-container{
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.envelope{
+
+    font-size:180px;
+
+    transition:.3s;
+
+    filter:drop-shadow(0 12px 18px rgba(0,0,0,.2));
+
+}
+
+.envelope-container:hover .envelope{
+
+    transform:scale(1.08);
+
+}
+
+.envelope-container p{
+
+    margin-top:18px;
+
+    font-size:20px;
+
+    color:#6b5647;
+
+}
+
+/* ==========================================================
+                        PETALS
+========================================================== */
+
+.petals{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.petal{
+
+    position:absolute;
+
+    top:-50px;
+
+    opacity:0;
+
+    animation:fall linear forwards;
+
+}
+
+@keyframes fall{
+
+    0%{
+
+        transform:translateY(0) rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    10%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(110vh) rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+/* ==========================================================
+                        LETTER PAGE
+========================================================== */
+
+.letter-page{
+
+    margin:0;
+
+    padding:50px 20px;
+
+    background:linear-gradient(135deg,#FFF6F7,#FDF2E9);
+
+    overflow-x:hidden;
+
+}
+
+.letter-container{
+
+    width:800px;
+
+    margin:40px auto;
+
+    position:relative;
+
+}
+
+.letter-paper{
+
+    width:800px;
+
+    height:600px;
+
+    background-image:url("../images/letter.bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding:115px 100px;
+
+    box-sizing:border-box;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
+
+    border-radius:10px;
+
+    animation:fadeIn .8s ease;
+
+}
+
+#letterText{
+
+    white-space:pre-line;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:22px;
+
+    line-height:1.5;
+
+    color:#5A4634;
+
+}
+
+.next-btn{
+
+    display:block;
+
+    margin:35px auto 0;
+
+}
+
+.petals{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.petal{
+
+    position:absolute;
+
+    top:-40px;
+
+    animation:fall linear forwards;
+
+}
+/* ==========================================================
+                        NOTE PAGE
+========================================================== */
+
+.note-page{
+
+    margin:0;
+
+    background:linear-gradient(135deg,#FFF8E8,#FFF0F5,#EEF8E8);
+
+    padding:80px 20px;
+
+}
+
+.note-card{
+
+    width:620px;
+
+    margin:40px auto;
+
+    background:#FFFDF6;
+
+    padding:60px;
+
+    border-radius:20px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
+    position:relative;
+
+    text-align:center;
+
+}
+
+.note-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:130px;
+
+    height:30px;
+
+    background:rgba(245,220,150,.7);
+
+    top:-15px;
+
+    left:50%;
+
+    transform:translateX(-50%) rotate(-3deg);
+
+    border-radius:5px;
+
+}
+
+.note-card h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:50px;
+
+    color:#D47A8C;
+
+    margin-bottom:20px;
+
+}
+
+.note-card p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#5B514A;
+
+}
+
+.note-card button{
+
+    margin-top:35px;
+
+}
+
+.flower{
+
+    position:absolute;
+
+    font-size:28px;
+
+}
+
+.top-left{
+
+    top:20px;
+
+    left:20px;
+
+}
+
+.bottom-right{
+
+    bottom:20px;
+
+    right:20px;
+
+}
+/* ==========================================
+              CHALLENGE PAGE
+========================================== */
+
+.challenge-page{
+
+    margin:0;
+
+    padding:50px 20px;
+
+    background:linear-gradient(
+    135deg,
+    #efc4cc,
+    #f7e99c,
+    #edbfc8);
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.challenge-card{
+
+    width:650px;
+
+    margin:40px auto;
+
+    background:#FFFDF8;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    position:relative;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+    animation:fadeIn .8s ease;
+
+}
+
+.challenge-card h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:56px;
+
+    color:#D67A8E;
+
+    margin-bottom:25px;
+
+}
+
+.intro{
+
+    font-size:20px;
+
+    color:#060605;
+
+    line-height:1.8;
+
+}
+
+.challenge-box{
+
+    width:80%;
+
+    margin:35px auto;
+
+    background:#FFF8D8;
+
+    border:2px dashed #E3C46F;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#5B514A;
+
+}
+
+.challenge-card button{
+
+    margin-top:25px;
+
+}
+
+.tape{
+
+    position:absolute;
+
+    width:150px;
+
+    height:35px;
+
+    background:rgba(198, 237, 209, 0.9);
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%) rotate(-4deg);
+
+    border-radius:4px;
+
+}
+
+.flower{
+
+    position:absolute;
+
+    font-size:30px;
+
+}
+
+.top-left{
+
+    top:20px;
+
+    left:20px;
+
+}
+
+.top-right{
+
+    top:20px;
+
+    right:20px;
+
+}
+
+.bottom-left{
+
+    bottom:10px;
+
+    left:10px;
+
+}
+
+.bottom-right{
+
+    bottom:10px;
+
+    right:10px;
+
+}
+/* ===================================================
+                    PHOTO PAGE
+=================================================== */
+
+.photo-page{
+
+    margin:0;
+    padding:0;
+
+    min-height:100vh;
+
+    background:url("../images/paper-bg.jpg");
+    background-size:cover;
+    background-position:center;
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+    position:relative;
+
+}
+
+/* ================= Flower Garland ================= */
+
+.flower-top{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:0;
+
+    pointer-events:none;
+
+    user-select:none;
+
+}
+
+/* ================= Title ================= */
+
+.photo-title{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:60px;
+
+    color:#0c080c;
+
+    margin:160px 0 50px;
+
+    line-height:1.15;
+
+    text-shadow:
+        2px 2px 8px rgba(223, 227, 194, 0.7);
+
+}
+
+/* ================= Board ================= */
+
+.photo-board{
+
+    position:relative;
+
+    z-index:2;
+
+    width:1200px;
+
+    max-width:95%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:flex-start;
+
+}
+
+/* ================= Polaroids ================= */
+
+.polaroid{
+
+    position:relative;
+
+    width:270px;
+
+    background:white;
+
+    padding:18px 18px 65px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.18);
+
+}
+
+/* Different positions */
+
+.left{
+
+    margin-top:80px;
+
+    transform:rotate(-9deg);
+
+}
+
+.center{
+
+    margin-top:0;
+
+    transform:rotate(6deg);
+
+}
+
+.right{
+
+    margin-top:105px;
+
+    transform:rotate(-6deg);
+
+}
+
+/* Hover */
+
+.polaroid:hover{
+
+    transform:translateY(-12px) scale(1.04);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.22);
+
+}
+
+/* ================= Tape ================= */
+
+.tape{
+
+    position:absolute;
+
+    top:-14px;
+
+    left:50%;
+
+    transform:translateX(-50%) rotate(-6deg);
+
+    width:110px;
+
+    height:32px;
+
+    background:rgba(241,223,183,.8);
+
+    border-radius:4px;
+
+}
+
+/* ================= Photo ================= */
+
+.photo{
+
+    width:100%;
+
+    height:340px;
+
+    background:#f8f2eb;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* ================= Placeholder ================= */
+
+.placeholder{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    color:#a0836d;
+
+}
+
+.placeholder{
+
+    font-size:48px;
+
+}
+
+.placeholder p{
+
+    margin:0;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:30px;
+
+    color:#876d5c;
+
+}
+
+/* ================= Finish Button ================= */
+
+#finishBtn{
+
+    display:none;
+
+    margin:90px auto;
+
+    padding:16px 42px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#e8a3b4;
+
+    color:white;
+
+    font-size:19px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+        0 12px 30px rgba(232,163,180,.4);
+
+}
+
+#finishBtn:hover{
+
+    transform:translateY(-4px);
+
+    background:#de8ea3;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:950px){
+
+.photo-title{
+
+    font-size:48px;
+
+    margin-top:140px;
+
+}
+
+.photo-board{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.left,
+.center,
+.right{
+
+    margin-top:0;
+
+    transform:rotate(0deg);
+
+}
+
+.polaroid{
+
+    width:260px;
+
+}
+
+.photo{
+
+    height:320px;
+
+}
+
+}
+.memory-photo{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+.photo-board{
+
+    margin-top:120px;
+
+    margin-left:100px;
+
+}
+/* ==========================================
+                ENDING PAGE
+========================================== */
+
+.ending-page{
+
+    margin:0;
+    padding:40px;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image:url("../images/paper-bg.jpg");
+    background-size:cover;
+    background-position:center;
+
+    font-family:'Poppins',sans-serif;
+
+    overflow:hidden;
+    position:relative;
+
+}
+
+.ending-card{
+
+    width:900px;
+    max-width:90%;
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(8px);
+
+    padding:60px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+    position:relative;
+
+    z-index:2;
+
+    animation:fadeUp 1s ease;
+
+}
+
+.ending-card h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:65px;
+
+    color:#cf7f95;
+
+    margin-bottom:30px;
+
+}
+
+#endingText{
+
+    font-size:21px;
+
+    line-height:2;
+
+    color:#665b57;
+
+    white-space:pre-line;
+
+    min-height:340px;
+
+}
+
+#restartBtn{
+
+    display:none;
+
+    margin-top:30px;
+
+    padding:15px 45px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#e6a2b2;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#restartBtn:hover{
+
+    background:#d88ea0;
+
+    transform:translateY(-3px);
+
+}
+
+.footer-note{
+
+    margin-top:25px;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:26px;
+
+    color:#b98292;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Falling Petals */
+
+.petals{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.petal{
+
+    position:absolute;
+
+    top:-50px;
+
+    animation:fall linear forwards;
+
+}
+
+@keyframes fall{
+
+    0%{
+
+        transform:translateY(0) rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    10%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(110vh) rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+@media screen and (max-width:768px){
+    /* Global Adjustments */
+    button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    /* Cover Page */
+    .cover {
+        width: 90%;
+        max-width: 480px;
+        padding: 40px 20px;
+    }
+    .cover h3 {
+        font-size: 28px;
+    }
+    .cover h1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+    .cover p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Lock Page */
+    .lock-box {
+        width: 90%;
+        max-width: 360px;
+        padding: 30px 20px;
+    }
+    .lock-box h1 {
+        font-size: 24px;
+    }
+    .lock-box input {
+        font-size: 16px;
+        padding: 12px;
+        margin: 15px 0;
+    }
+
+    /* Envelope Page */
+    .envelope {
+        font-size: 120px;
+    }
+    .envelope-container p {
+        font-size: 18px;
+    }
+
+    /* Letter Page */
+    .letter-container {
+        width: 95%;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    .letter-paper {
+        width: 100%;
+        height: auto;
+        min-height: 480px;
+        padding: 70px 25px 30px;
+        background-size: cover;
+    }
+    #letterText {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    /* Note & Challenge Cards */
+    .note-card {
+        width: 90%;
+        max-width: 500px;
+        padding: 45px 20px;
+        margin: 20px auto;
+    }
+    .note-card h1 {
+        font-size: 36px;
+    }
+    .note-card p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    .challenge-card {
+        width: 90%;
+        max-width: 500px;
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+    .challenge-card h1 {
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+    .intro {
+        font-size: 16px;
+    }
+    .challenge-box {
+        width: 95%;
+        padding: 15px;
+        font-size: 16px;
+        margin: 20px auto;
+    }
+
+    /* Scrapbook Photo Board */
+    .photo-title {
+        font-size: 36px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .photo-board {
+        margin-left: 0 !important;
+        margin-top: 40px !important;
+        gap: 40px;
+    }
+    .polaroid {
+        width: 240px;
+        padding: 12px 12px 45px;
+    }
+    .photo {
+        height: 280px;
+    }
+    .placeholder p {
+        font-size: 22px;
+    }
+    #finishBtn {
+        margin: 50px auto;
+    }
+
+    /* Ending Card */
+    .ending-card {
+        width: 95%;
+        padding: 35px 20px;
+    }
+    .ending-card h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    #endingText {
+        font-size: 16px;
+        line-height: 1.6;
+        min-height: 240px;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.S.</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#FFF8F6;
+            font-family:'Poppins',sans-serif;
+        }
+
+        .note{
+
+            width:430px;
+
+            background:white;
+
+            padding:40px;
+
+            border-radius:25px;
+
+            box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+            text-align:center;
+
+            position:relative;
+
+        }
+
+        .bow{
+
+            position:absolute;
+
+            top:-18px;
+
+            left:50%;
+
+            transform:translateX(-50%);
+
+            font-size:38px;
+
+        }
+
+        h1{
+
+            font-family:'Dancing Script',cursive;
+
+            color:#D97B93;
+
+            font-size:52px;
+
+            margin-top:20px;
+
+        }
+
+        p{
+
+            color:#6E4E4E;
+
+            line-height:1.8;
+
+            font-size:18px;
+
+        }
+
+        button{
+
+            margin-top:25px;
+
+            padding:14px 32px;
+
+            border:none;
+
+            border-radius:30px;
+
+            background:#E9A5B3;
+
+            color:white;
+
+            font-size:16px;
+
+            cursor:pointer;
+
+            transition:.3s;
+
+        }
+
+        button:hover{
+
+            transform:scale(1.05);
+
+            background:#D97B93;
+
+        }
+
+        .flower{
+
+            position:absolute;
+
+            right:20px;
+
+            bottom:15px;
+
+            font-size:22px;
+
+        }
+
+        @media (max-width: 480px) {
+            .note {
+                width: 90%;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            button {
+                padding: 12px 28px;
+                font-size: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="note">
+
+    <div class="bow">🎀</div>
+
+    <h1>P.S.</h1>
+
+    <p>
+
+        I couldn't let you reach the final surprise that easily...
+
+        <br><br>
+
+        One tiny challenge is waiting for you. 🌸
+
+    </p>
+
+    <button onclick="window.location.href='challenge.html'">
+
+        Begin →
+
+    </button>
+
+    <div class="flower">🌸</div>
+
+</div>
+
+</body>
+
+</html>
